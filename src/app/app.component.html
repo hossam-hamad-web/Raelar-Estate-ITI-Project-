@@ -1,0 +1,32 @@
+<main class="main">
+</main>
+
+<router-outlet>
+  <header>
+    <div class="container-fauild">
+      <div class="logo"><img src="assets/logo.jpg" alt="logo" width="150" height="auto"></div>
+      <span class="material-symbols-outlined minue">
+        menu
+      </span>
+      <nav>
+        <ul>
+          <li> <a routerLink="/">Home</a></li>
+          <li> <a routerLink="/about">About Us</a>
+          </li>
+          <li><a routerLink="/prop1">Properties</a></li>
+          <li class="dropdown">
+            <a routerLink="/agent">Pages &#x25BE;</a>
+            <ul class="dropdown-content">
+              <li><a routerLink="/agent">Agent</a></li>
+              <li><a routerLink="/agent-details">Agent Details</a></li>
+              <li><a href="">Agent Pricing</a></li>
+            </ul>
+          </li>
+          <li><a routerLink="/properties">Blog</a></li>
+          <li><a routerLink="/contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="request-visit"><a href="#">Request A Visit &rarr;</a></div>
+    </div>
+  </header>
+</router-outlet>

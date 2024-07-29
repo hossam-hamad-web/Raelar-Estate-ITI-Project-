@@ -1,0 +1,422 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1e2c35;
+
+    font-family: sans-serif;
+}
+/*Mobile First*/
+.background {
+    height: 30vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.background::before {
+    content: '';
+    background-image: url('/assets/Agents/photo_2024-07-17_11-02-37.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.20;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.content p {
+    margin: 10px 0 0;
+    font-size: 13px;
+}
+.profile-container{
+    display: flex;
+    background-color: #a4b4bc;
+    flex-direction: column;
+    padding: 30px;
+}
+.team-member-left{
+    width: 100%;
+    margin-bottom: 20px;
+
+    
+}
+.image-container{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: -5px;
+    
+}
+.image-container img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+.image-container .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5a646bb9;
+    color:white; 
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.image-container:hover .overlay{
+    opacity: 1;
+}
+.social-media{
+    text-align: center;
+}
+.social-media .icons{
+    display: flex;
+    justify-content: center;
+}
+.social-media .icons a{
+    color: white;
+    margin: 0 8px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid white ;
+    border-radius: 50%;
+}
+.social-media .icons a:hover{
+    background-color: white;
+    color:#1e2c35;
+}
+
+.info {
+    padding: 10px;
+    background-color: #2e3a46;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 15px 15px ;
+}
+
+.info .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info h3 {
+    margin: 4px;
+    font-size: 14px;
+}
+
+.info p {
+    margin: 0; 
+    font-size: 12px;
+}
+
+.info a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.info i {
+    font-size: 14px;
+    background-color: #dce5e9;
+    border-radius: 50%;
+    padding: 4px;
+    color: #2e3a46;
+    transition: background-color 0.3 ease;
+}
+
+.info i:hover {
+    background-color: #1e2c35;
+    color: #dce5e9;
+}
+
+.team-member-right{
+    width: 100%;
+    padding: 0;
+}
+.details{
+    margin-top: 20px;
+
+}
+.details h2{
+    margin: 0 0 10px;
+}
+.emp-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.emp-details p{
+    margin: 5px 0;
+    width: 100%;
+}
+.emp-details strong{
+    color:black;
+}
+.emp-details span{
+    color: black;
+}
+#description{
+margin-top: 20px;
+}
+.messages{
+    background-color:#a4b4bc;
+    padding: 20px;
+
+
+}
+.message-book{
+    text-align: center;
+}
+.message-book h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+
+}
+form {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.form-group{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-group label{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width: 90%;
+    border: 1px solid #dce5e9;
+    background-color: #a4b4bc;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+  
+  
+ .form-group input[type="text"] + input[type="email"] {
+    margin-left: 0;
+  }
+
+
+.form-group i {
+    margin-left: 5px; 
+    color: #1e2c35;
+}
+
+
+
+textarea {
+    height: 150px;
+    padding: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #1e2c35;
+    color: #dce5e9;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+}
+button:hover {
+    background-color:#dce5e9;
+    color: #1e2c35;
+    border: 1px solid #1e2c35;
+
+}
+@media only screen and (min-width: 600px) {
+  
+     .background{
+        height: 30vh;
+    }
+    .background::before{
+        background-size: cover;
+        opacity: 0.20;
+    }
+       .content h2{
+        font-size: 35px;
+    }
+    .content p{
+        font-size: 10px;
+    }
+    .profile-container{
+        flex-direction: column;
+        padding: 50px;
+    }
+.team-member-left{
+    margin-bottom: 0;
+}
+.team-member-right{
+    padding-left: 20px;
+}
+.message-book h2{
+    font-size: 28px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width: 70%;
+}
+button{
+    width: 30%;
+}
+
+}
+@media only screen and (min-width:768px){
+   .background{
+        height: 40vh;
+    }
+    .background::before{
+        background-size: cover;
+        opacity: 0.20;
+    }
+       .content h2{
+        font-size: 40px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .profile-container{
+        flex-direction: row;
+        padding: 40px;
+    }
+.team-member-left{
+    margin-bottom: 0;
+}
+
+.team-member-right{
+    padding-left: 20px;
+}
+    .messages{
+        padding: 30px;
+    }
+    .message-book h2{
+        font-size: 28px;
+        margin-right: 0;
+    }
+    .form-group{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .form-group input{
+        width: 70%;
+    }
+    .form-group select,
+    .form-group textarea{
+        width: 70%;
+    }
+    .form-group input[type ="text"]+input[type="email"]{
+        margin-left: 10px;
+    }
+    button{
+       width:  30%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+ 
+     .background{
+        height: 50vh;
+    }
+    .background::before{
+        background-size: cover;
+        opacity: 0.20;
+    }
+          .content h2{
+        font-size: 48px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .profile-container{
+        padding: 70px 250px;
+        display: flex;
+        flex-direction: row;
+    }
+   .image-container img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+.team-member-left{
+    flex: 1;
+}
+.team-member-right{
+    flex: 2;
+}
+    .info{
+        flex-direction: row;
+        padding: 20px;
+    }
+    .emp-details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3px;
+}
+.emp-details p{
+    margin: 10px 0;
+    width: calc(50% - 10px);
+}
+.messages{
+    padding: 40px;
+}
+.message-book h2{
+    font-size: 32px;
+
+}
+.form-group{
+    display: flex;
+    flex-direction: row;
+}
+.form-group label{
+    padding: 10px 0 ;
+    margin:5px;
+  
+}
+
+.form-group input{
+    width:20%
+}
+.form-group select,
+.form-group textarea{
+    width: 42%;
+}
+button{
+    width: 20%;
+}
+}

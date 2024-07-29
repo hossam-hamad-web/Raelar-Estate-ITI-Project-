@@ -1,0 +1,479 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1e2c35;
+
+    font-family: sans-serif;
+}
+/*Mobile First*/
+
+.background {
+    height: 30vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.background::before {
+    content: '';
+    background-image: url('/assets/Agents/photo_2024-07-17_11-02-37.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.20;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.content p {
+    margin: 10px 0 0;
+    font-size: 13px;
+}
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-content: center;
+    background-color: #a4b4bc;
+    padding: 50px 100px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.team-member {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.image-container {
+    position: relative;
+    border-radius: 0;
+    overflow: hidden;
+    margin-bottom: -5px;
+    
+}
+
+.image-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #5a646bb9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+
+.social-media a {
+    color: white;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-media a:hover {
+    background-color: white;
+    color:#1e2c35;
+    border-radius: 50%;
+}
+
+.info {
+    padding: 10px;
+    background-color: #2e3a46;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info h3 {
+    margin: 4px;
+    font-size: 14px;
+}
+
+.info p {
+    margin: 0; 
+    font-size: 10px;
+}
+
+.info a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.info i {
+    font-size: 14px;
+    background-color: #dce5e9;
+    border-radius: 50%;
+    padding: 5px;
+    color: #2e3a46;
+    transition: background-color 0.3 ease;
+   
+}
+
+.info i:hover{
+    background-color: #1e2c35;
+    color: #dce5e9;
+}
+.container-log{
+  display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 150px;
+    background-color: #a4b4bc;
+    transition: background-color 0.3 ease;
+   
+}
+.logo{
+padding: 2px;
+margin: 5px;
+
+
+}
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    
+}
+.container-img-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a4b4bc;
+    padding: 30px 20px;
+}
+
+.left {
+    padding: 20px;
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+.left img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+   
+}
+
+.right {
+    padding: 10px;
+    margin-top: 10px;
+}
+.right h2{
+    margin-bottom: 7px;
+}
+
+form {
+    margin: 0 auto;
+}
+
+
+.form-group input{
+    width: 100%;
+    border: 1px solid #dce5e9;
+    background-color: #a4b4bc;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+   
+}
+  
+ .form-group label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+ .form-group input[type="text"] + input[type="email"] {
+    margin-left: 0;
+  }
+.form-group select,.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color:#a4b4bc;
+    border: 1px solid #dce5e9;
+    border-radius: 25px;
+    
+}
+
+
+
+.form-group i {
+    margin-left: 5px; 
+    color: #1e2c35;
+}
+
+select {
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    padding: 12px 17px;
+    background-color: #1e2c35;
+    color: hsl(198, 14%, 82%);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: hsl(198, 14%, 82%);
+    color: #1e2c35;
+    border: 1px solid #1e2c35;
+
+}
+
+@media only screen and (min-width: 600px) {
+    .background{
+        height: 30vh;
+    }
+    .background::before{
+        background-size: cover;
+        opacity: 0.20;
+    }
+       .content h2{
+        font-size: 35px;
+    }
+    .content p{
+        font-size: 10px;
+    }
+    .team-container{
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px 100px;
+    }
+    .image-container img{
+        height: 450px;
+    }
+    .social-media a{
+        font-size:12px;
+        padding: 8px;
+    }
+    .info{
+        padding: 10px;
+    }
+    .info h3{
+        font-size: 12px;
+    }
+    .info p{
+        font-size: 10px;
+    }
+    .container-log{
+        padding: 50px 150px;
+    }
+    .logo{
+        padding: 3px;
+        margin: 7px;
+    }
+    .container-img-form{
+        padding: 50px  40px;
+    }
+    .left{
+        padding: 30px;
+    }
+    .right{
+        padding: 20px;
+    }
+    .form-group input{
+        padding: 15px;
+    }
+    .form-group select,.form-group textarea{
+        padding: 15px;
+    }
+    button{
+        padding: 12px 18px;
+    }
+}
+@media only screen and (min-width:768px){
+    .background{
+        height: 40vh;
+    }
+    .background::before{
+        background-size: cover;
+        opacity: 0.20;
+    }
+       .content h2{
+        font-size: 40px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .team-container{
+        grid-template-columns: repeat(2,1fr);
+        padding: 50px 150px;
+    }
+    .image-container img{
+        height: 450px;
+    }
+    .social-media a{
+        font-size:12px;
+        padding: 8px;
+    }
+    .info{
+        padding: 15px;
+    }
+    .info h3{
+        font-size: 12px;
+    }
+    .info p{
+        font-size: 10px;
+    }
+   
+    .container-img-form{
+        padding: 50px  40px;
+    }
+    .left{
+        padding: 30px;
+    }
+    .right{
+        padding: 20px;
+    }
+    .form-group input{
+        padding: 15px;
+    }
+    .form-group select,.form-group textarea{
+        padding: 15px;
+    }
+    button{
+        padding: 12px 18px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .background{
+        height: 50vh;
+    }
+    .background::before{
+        background-size: cover;
+        opacity: 0.20;
+    }
+          .content h2{
+        font-size: 48px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .team-container{
+      grid-template-columns: repeat(3,1fr);
+      padding: 70px 250px;
+  }
+  .image-container img{
+      height: 450px;
+  }
+  .social-media a{
+      font-size:15px;
+      padding: 10px;
+  }
+  .info{
+      padding: 20px;
+  }
+  .info h3{
+      font-size: 16px;
+  }
+  .info p{
+      font-size: 12px;
+  }
+
+
+.container-img-form{
+      padding: 70px 100px;
+          flex-direction: row;
+          justify-content: space-between;
+  
+  }
+  .left{
+      flex: 1;
+      padding: 40px;
+  }
+  .left img{
+      max-width: 80%;
+  }
+  .right{
+      flex:1;
+      padding: 30px;
+  }
+  .form-group label{
+    padding: 10px 0 ;
+    margin:5px;
+  }
+  .form-group input{
+      display: inline-block;
+      width: 42%;
+      margin: 5px;
+      
+  }
+  .form-group select,.form-group textarea{
+      padding: 20px;
+  }
+  button{
+      padding: 15px 20px;
+  }
+}
